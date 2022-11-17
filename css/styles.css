@@ -199,7 +199,11 @@ h4{
 /*Formato pagina contacto*/
 
 form{
-    background-color: gainsboro;
+   
     
 
+}
+
+.botones{
+    padding: 0.5rem;
 }
