@@ -87,23 +87,21 @@ footer{
 
 /*Formato pagina Inicio*/
 
-.carrusel{
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    
-    
+.carousel{
+    margin-top: 1rem;
 }
+
+
 
 
 
 /*Formato pagina Tienda Web*/
 
 
-h3{
+h4{
     font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 
@@ -153,7 +151,7 @@ header{
 }
 
 .card{
-    border: black 2px solid;
+    border: black 1px solid;
     /* background-color: rgb(255, 208, 170);*/
     width: 14rem;
     text-align: center;
@@ -191,22 +189,8 @@ footer{
 }
 
 
-/*Formato pagina preguntas frecuentes*/
 
-h2{
-    color: black;
-    text-decoration: black;
-    text-align: center;
-}
 
-h4{
-
-    font-style: italic;
-}
-
-h6{
-    font-style: italic;
-}
 
 /*Formato pagina contacto*/
 
@@ -223,4 +207,21 @@ h6{
     margin-right: 30px;
     padding: 1rem;
     text-align: center;
+}
+
+/*Formato pagina preguntas frecuentes*/
+
+h2{
+    color: black;
+    text-decoration: black;
+    text-align: center;
+}
+
+h4{
+
+    font-style: italic;
+}
+
+h6{
+    font-style: italic;
 }
