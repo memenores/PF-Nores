@@ -1,0 +1,132 @@
+/*Formato general del sitio web*/
+
+body{
+    background-image: url(../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+
+}
+
+.top{
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+header{
+    min-height: 7rem;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 1rem;
+
+      
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    width: 8rem;
+    margin-right: 2rem;
+ 
+}
+
+/*.logo:hover{
+    transform: rotate(90deg);
+
+}*/
+
+
+ul{
+    list-style: none;
+    text-align:end;
+}
+
+li{
+    position: relative;
+    display: inline;
+    
+
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    font-style: oblique;
+    padding-right: 0.4rem;
+
+
+}
+
+li a:hover{
+    
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 0.5rem 0rem;
+    }
+
+    .top{
+        display: none;
+    }
+}
+
+
+/*Formato footer*/
+
+footer{
+    padding: 2rem;
+    font-size: 0.75rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer p{
+    display: flex;
+}
+
+
+.logo_footer{
+    width: 6rem;
+    margin-right: 2rem;
+ 
+}
+
+.img_footer{
+    width: 6rem;
+}
+
+.logos_prestadores{
+    display:flex;
+    
+}
+
+
+/*Formato pagina Inicio*/
+
+.carousel{
+    margin-top: 1rem;
+}

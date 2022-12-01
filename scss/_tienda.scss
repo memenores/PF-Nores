@@ -1,0 +1,93 @@
+/*Formato pagina Tienda Web*/
+
+
+h4{
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+#grilla_productos{
+    display: grid;
+    grid-template-areas:
+    "cabecera cabecera cabecera cabecera"
+    "productos productos productos productos"
+    "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header{
+    grid-area: cabecera;
+
+}
+
+@media screen and (max-width: 767px){
+    header{
+        flex-direction: column;
+    }
+}
+
+.productos{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+
+}
+
+@media screen and (max-width: 992px){
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.card{
+    border: black 1px solid;
+    /* background-color: rgb(255, 208, 170);*/
+    width: 14rem;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.card_imagen{
+    height: 12rem;
+}
+
+.card_imagen:hover{
+    transform: scale(1.15);
+}
+
+.boton:hover{
+    font-weight: bold;
+
+}
+
+.card_titulo{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer{
+    grid-area: footer;
+}
+
