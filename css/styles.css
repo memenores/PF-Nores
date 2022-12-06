@@ -8,7 +8,7 @@ $pantalla-grande: 992px;
 $pantalla-xg: 1200px;*/
 /*Formato general del sitio web*/
 body {
-  background-image: url(../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg);
+  background-image: url("../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
@@ -32,6 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-style: italic;
   margin-top: 1rem;
 }
 
@@ -49,26 +50,31 @@ header {
     transform: rotate(90deg);
 
 }*/
-ul {
-  list-style: none;
-  text-align: end;
-}
-
-li {
-  position: relative;
-  display: inline;
-}
-
-li a {
+a {
   text-decoration: none;
   color: black;
   font-size: 0.75rem;
-  font-style: oblique;
+  font-style: italic;
   padding-right: 0.4rem;
 }
 
-li a:hover {
+a:hover {
   font-weight: bold;
+}
+
+.texto {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -115,14 +121,13 @@ footer p {
 }
 
 /*Formato pagina sobre nosotras*/
-.texto {
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  margin-right: 1rem;
-  padding: 0.5rem;
-  text-align: center;
-}
-
+/*.texto{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}*/
 /*Formato pagina Tienda Web*/
 h4 {
   font-style: italic;
