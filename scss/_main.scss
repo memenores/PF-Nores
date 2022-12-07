@@ -28,6 +28,7 @@ header{
     align-items: center;
     font-style: italic;
     margin-top: 1rem;
+    
    
 }
 
@@ -51,12 +52,22 @@ header{
 
 
 
-a{
+/*a{
     text-decoration: none;
     color: black;
     font-size: 0.75rem;
     font-style: italic;
     padding-right: 0.4rem;
+}*/
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 0.85rem;
+    font-style: italic;
+    padding-right: 0.4rem;
+    justify-content: space-around;
+
 }
 
 a:hover{
@@ -65,9 +76,9 @@ a:hover{
 }
 
 .texto{
-    margin-left: 1rem;
+    margin-left: 4rem;
     margin-top: 0.5rem;
-    margin-right: 1rem;
+    margin-right: 4rem;
     padding: 0.5rem;
     text-align: center;
 }
@@ -76,7 +87,7 @@ h1{
     font-style: italic;
     text-align: center;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     
 }
 
