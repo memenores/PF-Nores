@@ -1,10 +1,24 @@
-/*variables de fuentes
-$fuente-grande: 2rem;
-$fuente-chica: 0.75rem;*/
+/*variables de fuentes*/
+
+$fuente-xg: 1.7rem;
+$fuente-g: 1.5rem;
+$fuente-m: 1.2rem;
+$fuente-s: 1rem;
+$fuente-xs: 0.85rem;
+$fuente-xxs: 0.75rem;
+
+/*variables de tamaño de imagen*/
+
+$imagen-g: 12rem;
+$imagen-m: 8rem;
+$imagen-s: 6rem;
+
+/*mixin*/
 
 
-/*variables para tamaños de las media queries
-$pantalla-mediana: 768px;
-$pantalla-grande: 992px;
-$pantalla-xg: 1200px;*/
-
+@mixin margenes{
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+    margin-bottom: 0.5rem;
+}

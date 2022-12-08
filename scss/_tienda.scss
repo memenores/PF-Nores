@@ -1,54 +1,9 @@
 /*Formato pagina Tienda Web*/
 
-/*.pagina_tienda{
+.prendas{
     display: flex;
-    justify-content: center;
-}*/
-
-.grilla_productos{
-    display: grid;
-    grid-template-areas:
-    "cabecera cabecera cabecera cabecera"
-    "productos productos productos productos"
-    "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    
-}
-
-header{
-    grid-area: cabecera;
-
-}
-
-@media screen and (max-width: 767px){
-    header{
-        flex-direction: column;
-    }
-}
-
-.productos{
-    grid-area: productos;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 2rem;
-    justify-items: center;
-
-}
-
-@media screen and (max-width: 992px){
-    .productos{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-}
-
-@media screen and (max-width: 767px){
-    .productos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
+    align-content: center;
+    justify-content: space-between;
 }
 
 .card{
@@ -66,7 +21,7 @@ header{
 
 }
 .card_imagen{
-    height: 12rem;
+    height: $imagen-g;
 }
 
 .card_imagen:hover{
@@ -80,7 +35,7 @@ header{
 
 .card_titulo{
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: $fuente-s;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -94,5 +49,5 @@ footer{
 .clase_tienda{
     text-align: center;
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: $fuente-m;
 }

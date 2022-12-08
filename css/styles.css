@@ -1,20 +1,18 @@
 @charset "UTF-8";
-/*variables de fuentes
-$fuente-grande: 2rem;
-$fuente-chica: 0.75rem;*/
-/*variables para tamaños de las media queries
-$pantalla-mediana: 768px;
-$pantalla-grande: 992px;
-$pantalla-xg: 1200px;*/
+/*variables de fuentes*/
+/*variables de tamaño de imagen*/
+/*mixin*/
 /*Formato general del sitio web*/
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
 body {
   background-image: url("../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: sans-serif;
   text-align: left;
   padding: 1rem;
   margin: 0;
+  font-family: "Klee One", cursive;
+  font-weight: 200;
 }
 
 .top {
@@ -62,20 +60,23 @@ header {
   color: black;
   font-size: 0.85rem;
   font-style: italic;
+  font-weight: 300;
   padding-right: 0.4rem;
   justify-content: space-around;
 }
 
 a:hover {
   font-weight: bold;
+  color: blue;
 }
 
 .texto {
+  padding: 0.5rem;
+  text-align: center;
   margin-left: 4rem;
   margin-top: 0.5rem;
   margin-right: 4rem;
-  padding: 0.5rem;
-  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -83,6 +84,16 @@ h1 {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 @media screen and (max-width: 767px) {
@@ -95,6 +106,9 @@ h1 {
   .top {
     display: none;
   }
+  footer {
+    flex-direction: column;
+  }
 }
 /*Formato footer*/
 footer {
@@ -102,8 +116,8 @@ footer {
   font-size: 0.75rem;
   font-style: italic;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 
 footer p {
@@ -121,6 +135,12 @@ footer p {
 
 .logos_prestadores {
   display: flex;
+  justify-content: end;
+}
+
+.leyenda {
+  display: flex;
+  padding: 1rem;
 }
 
 /*Formato pagina Inicio*/
@@ -128,54 +148,13 @@ footer p {
   margin-top: 1rem;
 }
 
-/*Formato pagina sobre nosotras*/
-/*.texto{
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    padding: 0.5rem;
-    text-align: center;
-}*/
 /*Formato pagina Tienda Web*/
-/*.pagina_tienda{
-    display: flex;
-    justify-content: center;
-}*/
-.grilla_productos {
-  display: grid;
-  grid-template-areas: "cabecera cabecera cabecera cabecera" "productos productos productos productos" "footer footer footer footer";
-  grid-template-columns: repeat(4, 1fr);
+.prendas {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 
-header {
-  grid-area: cabecera;
-}
-
-@media screen and (max-width: 767px) {
-  header {
-    flex-direction: column;
-  }
-}
-.productos {
-  grid-area: productos;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
-  justify-items: center;
-}
-
-@media screen and (max-width: 992px) {
-  .productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 767px) {
-  .productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .card {
   border: black 1px solid;
   width: 14rem;
@@ -217,22 +196,6 @@ footer {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.2rem;
-}
-
-/*Formato pagina preguntas frecuentes*/
-/*h2{
-    color: black;
-    text-decoration: black;
-    text-align: center;
-}*/
-h2 {
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-style: italic;
 }
 
 /*Formato pagina contacto*/

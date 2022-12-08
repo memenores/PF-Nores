@@ -1,13 +1,15 @@
 /*Formato general del sitio web*/
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
 
 body{
     background-image: url("../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: sans-serif;
     text-align: left;
     padding: 1rem;
     margin: 0;
+    font-family: 'Klee One', cursive;
+    font-weight: 200;
 
 }
 
@@ -15,7 +17,7 @@ body{
     background-color: black;
     color: white;
     font-weight: 300;
-    font-size: 0.75rem;
+    font-size: $fuente-xxs;
     letter-spacing: 0.5rem;
     text-align: center;
 }
@@ -40,7 +42,7 @@ header{
 }
 
 .logo{
-    width: 8rem;
+    width: $imagen-m;
     margin-right: 2rem;
  
 }
@@ -63,8 +65,9 @@ header{
 .nav-link{
     text-decoration: none;
     color: black;
-    font-size: 0.85rem;
+    font-size: $fuente-xs;
     font-style: italic;
+    font-weight: 300;
     padding-right: 0.4rem;
     justify-content: space-around;
 
@@ -73,22 +76,31 @@ header{
 a:hover{
 
     font-weight: bold;
+    color: blue;
 }
 
 .texto{
-    margin-left: 4rem;
-    margin-top: 0.5rem;
-    margin-right: 4rem;
     padding: 0.5rem;
     text-align: center;
+    @include margenes;
 }
 
 h1{
     font-style: italic;
     text-align: center;
     margin-top: 1rem;
-    font-size: 1.7rem;
+    font-size: $fuente-xg;
     
+}
+
+h2{
+    font-size: $fuente-g;
+    font-style: italic;
+}
+
+h3{
+    font-size: $fuente-m;
+    font-style: italic;
 }
 
 @media screen and (max-width: 767px){
@@ -103,6 +115,10 @@ h1{
     .top{
         display: none;
     }
+
+    footer{
+        flex-direction: column;
+    }
 }
 
 
@@ -110,32 +126,40 @@ h1{
 
 footer{
     padding: 2rem;
-    font-size: 0.75rem;
+    font-size: $fuente-xxs;
     font-style: italic;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: baseline;
+    justify-content: space-evenly;
+    
     
 }
 
 footer p{
     display: flex;
+    
 }
 
 
 .logo_footer{
-    width: 6rem;
+    width: $imagen-s;
     margin-right: 2rem;
  
 }
 
 .img_footer{
-    width: 6rem;
+    width: $imagen-s;
 }
 
 .logos_prestadores{
     display:flex;
+    justify-content: end;
     
+}
+
+.leyenda{
+    display: flex;
+    padding: 1rem;
 }
 
 

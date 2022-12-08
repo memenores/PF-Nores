@@ -5,456 +5,416 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="TIENDA, SEGUNDA MANO, MODA SUSTENTABLE, REUTILIZAR, 3R, REDUCIR">
+    <meta name="description" content="Tienda web de ropa y accesorios de moda de segunda mano.">
+
     <!--CSS de Bootstrap con CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--CSS mio-->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Tienda Online</title>
+    <link rel="shortcut icon" href="../img/favicomatic/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="shortcut icon" href="../img/favicomatic/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <title>Tienda Web</title>
 </head>
 
-<body class="grilla_productos texto">
+<body>
 
-    
-    <header class="container">
-        <div class="inicio">
+    <section class="container-fluid">
 
-            <img src="../img/Imagen4.png" alt="logo" class="logo">
+        <header class="container-fluid row">
+            <div class="col inicio">
 
-        </div>
+                <img src="../img/Imagen4.png" alt="logo" class="logo">
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="../index.html">Inicio</a>
-                        <a class="nav-link active" href="../pages/nosotras.html">Quienes somos</a>
-                        <a class="nav-link active" href="../pages/tienda.html">Productos</a>
-                        <a class="nav-link active" href="../pages/faqs.html">Preguntas frecuentes</a>
-                        <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+
+            <nav class="col navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                            <a class="nav-link active" href="../pages/nosotras.html">Nosotras</a>
+                            <a class="nav-link active" href="../pages/tienda.html">Productos</a>
+                            <a class="nav-link active" href="../pages/faqs.html">Preguntas</a>
+                            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                        </div>
                     </div>
                 </div>
+            </nav>
+        </header>
+
+        <div class="row">
+            <div class="col">
+                <h1>Tienda Web</h1>
+                <h2 class="clase_tienda">Mujer</h2>
             </div>
-        </nav>
-    </header>
-    <main id="paginaTienda">
-
-        <!-- BUSCADOR EN LA TIENDA
-           
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand"></a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-          -->
-
-        <h1>Tienda Web</h1>
-
-        <h2 class="clase_tienda">Mujer</h2>
-
-        <section class="productos">
-
-            
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera 1.jpeg" alt="">
-                <h4 class="card_titulo">Remera Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera 2.jpeg" alt="">
-                <h4 class="card_titulo">Remera Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera Akiabara1.PNG" alt="">
-                <h4 class="card_titulo">Remera Akiabara</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$2000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera Akiabara2.PNG" alt="">
-                <h4 class="card_titulo">Remera Akiabara</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$2000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera Forever 21.PNG" alt="">
-                <h4 class="card_titulo">Remera Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera morley.PNG" alt="">
-                <h4 class="card_titulo">Remera manga larga</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Remera Vitamina.PNG" alt="">
-                <h4 class="card_titulo">Remera Vitamina</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$4500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Saco HyM.PNG" alt="">
-                <h4 class="card_titulo">Saco H&M</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$5000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Saco Oh Calcuta.PNG" alt="">
-                <h4 class="card_titulo">Saco Oh Calcuta!</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$5500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Saco Roxy.PNG" alt="">
-                <h4 class="card_titulo">Saco Roxy</h4>
-                <p class="card_desc">Talle L</p>
-                <p class="card_price">$3500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Saco Zara.PNG" alt="">
-                <h4 class="card_titulo">Saco Zara</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Short 47st.PNG" alt="">
-                <h4 class="card_titulo">Short 47 street</h4>
-                <p class="card_desc">Talle XS</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-
-            <div class="card">
-                <img class="card_imagen" src="../img/Vestido Forever 21 2.PNG" alt="">
-                <h4 class="card_titulo">Vestido Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Vestido Forever 21.PNG" alt="">
-                <h4 class="card_titulo">Vestido Forever 21</h4>
-                <p class="card_desc">Talle M</p>
-                <p class="card_price">$4500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Vestido jean.PNG" alt="">
-                <h4 class="card_titulo">Jardinero Jean</h4>
-                <p class="card_desc">Talle M</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Zapatos.PNG" alt="">
-                <h4 class="card_titulo">Zapatos</h4>
-                <p class="card_desc">Talle 37</p>
-                <p class="card_price">$4500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Bikini.PNG" alt="">
-                <h4 class="card_titulo">Bikini</h4>
-                <p class="card_desc">Talle 1</p>
-                <p class="card_price">$4500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Blazer Akiabara.PNG" alt="">
-                <h4 class="card_titulo">Blazer Akiabara</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$6000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Blazer blanco.PNG" alt="">
-                <h4 class="card_titulo">Blazer</h4>
-                <p class="card_desc">Talle M</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Blazer Forever 21.PNG" alt="">
-                <h4 class="card_titulo">Blazer Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$5500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Forever 21 2.PNG" alt="">
-                <h4 class="card_titulo">Camisa Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Forever 21.PNG" alt="">
-                <h4 class="card_titulo">Camisa Forever 21</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Kosiuko.PNG" alt="">
-                <h4 class="card_titulo">Camisa Kosiuko</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$5000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa.PNG" alt="">
-                <h4 class="card_titulo">Camisa</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$2500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Chaleco jean.PNG" alt="">
-                <h4 class="card_titulo">Chaleco Jean</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Collar Forever 1.PNG" alt="">
-                <h4 class="card_titulo">Collar Forever 21</h4>
-                <p class="card_desc">Talle único</p>
-                <p class="card_price">$1200</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Collar Forever 2.PNG" alt="">
-                <h4 class="card_titulo">Collar Forever 21</h4>
-                <p class="card_desc">Talle único</p>
-                <p class="card_price">$1200</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Musculosa charreteras.PNG" alt="">
-                <h4 class="card_titulo">Musculosa</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Musculosa Forever21.PNG" alt="">
-                <h4 class="card_titulo">Musculosa Forever 21</h4>
-                <p class="card_desc">Talle L</p>
-                <p class="card_price">$3800</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Musculosa tiritas.PNG" alt="">
-                <h4 class="card_titulo">Musculosa</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$2500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Musculosa Zara.PNG" alt="">
-                <h4 class="card_titulo">Musculosa Zara</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Polera.PNG" alt="">
-                <h4 class="card_titulo">Polera</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$4500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Pollera American Eagle.PNG" alt="">
-                <h4 class="card_titulo">Pollera American Eagle</h4>
-                <p class="card_desc">Talle L</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Pollera.PNG" alt="">
-                <h4 class="card_titulo">Pollera</h4>
-                <p class="card_desc">Talle S</p>
-                <p class="card_price">$2500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-
-
-
-        </section>
-
-        <h2 class="clase_tienda">Niños</h2>
-
-        <section class="productos">
-
-
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Baby Cottons.PNG" alt="">
-                <h4 class="card_titulo">Camisa Baby Cottons</h4>
-                <p class="card_desc">Talle 2 años</p>
-                <p class="card_price">$5000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Baby Harvest.PNG" alt="">
-                <h4 class="card_titulo">Camisa Baby Harvest</h4>
-                <p class="card_desc">Talle 9 meses</p>
-                <p class="card_price">$3000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Carters.PNG" alt="">
-                <h4 class="card_titulo">Camisa Carters</h4>
-                <p class="card_desc">Talle 12 meses</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Camisa Zara kids.PNG" alt="">
-                <h4 class="card_titulo">Camisa Zara</h4>
-                <p class="card_desc">Talle 12 meses</p>
-                <p class="card_price">$4500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img//Chaleco H&M kids.PNG" alt="">
-                <h4 class="card_titulo">Chaleco H&M</h4>
-                <p class="card_desc">Talle 12 meses</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Conjunto baby cottons.PNG" alt="">
-                <h4 class="card_titulo">Conjunto Baby Cottons</h4>
-                <p class="card_desc">Talle RN</p>
-                <p class="card_price">$3700</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Conjunto bebe.PNG" alt="">
-                <h4 class="card_titulo">Conjunto bebe</h4>
-                <p class="card_desc">Talle 3 meses</p>
-                <p class="card_price">$4000</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Pack bodies.PNG" alt="">
-                <h4 class="card_titulo">Pack Bodies Baby Harvest</h4>
-                <p class="card_desc">Talle RN</p>
-                <p class="card_price">$3200</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Pantalon H&M kids.PNG" alt="">
-                <h4 class="card_titulo">Pantalón H&M</h4>
-                <p class="card_desc">Talle 12 meses</p>
-                <p class="card_price">$3600</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-            <div class="card">
-                <img class="card_imagen" src="../img/Short verde.PNG" alt="">
-                <h4 class="card_titulo">Short</h4>
-                <p class="card_desc">Talle 10</p>
-                <p class="card_price">$1500</p>
-                <button class="btn btn-outline-dark">Agregar al carrito</button>
-
-            </div>
-
-
-        </section>
-        <!-- Ver como armar un buscador de productos
-           <aside id="buscadorTienda">
-            <form action="">
-                <input type="text">
-                <input type="submit" value="Buscar">
-            </form>
-        </aside>
-        -->
-
-
-    </main>
-    <footer>
-        <img src="../img/Imagen4.png" alt="logo" class="logo_footer">
-        <p>Sitio web de prueba desarrollado en el curso de Desarrollo Web de Coderhouse</p>
-
-        <div class="logos_prestadores">
-            <img src="../img/Correo_arg_logo.png" alt="correo" class="img_footer">
-            <img src="../img/logo mercado pago1.webp" alt="mercado_pago" class="img_footer">
         </div>
-    </footer>
+
+        <section class="prendas">
+
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera 1.jpeg" alt="RemeraForever21-1">
+                    <h4 class="card_titulo">Remera Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera 2.jpeg" alt="RemeraForever21-2">
+                    <h4 class="card_titulo">Remera Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera Akiabara1.PNG" alt="RemeraAkiabara1">
+                    <h4 class="card_titulo">Remera Akiabara</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$2000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera Akiabara2.PNG" alt="RemeraAkiabara2">
+                    <h4 class="card_titulo">Remera Akiabara</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$2000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera Forever 21.PNG" alt="RemeraForever21-3">
+                    <h4 class="card_titulo">Remera Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera morley.PNG" alt="RemeraGrisMorley">
+                    <h4 class="card_titulo">Remera manga larga</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Remera Vitamina.PNG" alt="RemeraVitamina">
+                    <h4 class="card_titulo">Remera Vitamina</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$4500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Saco HyM.PNG" alt="SacoHyM">
+                    <h4 class="card_titulo">Saco H&M</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$5000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Saco Oh Calcuta.PNG" alt="SacoOhCalcuta>
+                    <h4 class=" card_titulo">Saco Oh Calcuta!</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$5500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Saco Roxy.PNG" alt="SacoRoxy">
+                    <h4 class="card_titulo">Saco Roxy</h4>
+                    <p class="card_desc">Talle L</p>
+                    <p class="card_price">$3500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Saco Zara.PNG" alt="SacoZara">
+                    <h4 class="card_titulo">Saco Zara</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Short 47st.PNG" alt="Short47St">
+                    <h4 class="card_titulo">Short 47 street</h4>
+                    <p class="card_desc">Talle XS</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Vestido Forever 21 2.PNG" alt="VestidoForever21-2">
+                    <h4 class="card_titulo">Vestido Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Vestido Forever 21.PNG" alt="VestidoForever21-1">
+                    <h4 class="card_titulo">Vestido Forever 21</h4>
+                    <p class="card_desc">Talle M</p>
+                    <p class="card_price">$4500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Vestido jean.PNG" alt="VestidoJean">
+                    <h4 class="card_titulo">Jardinero Jean</h4>
+                    <p class="card_desc">Talle M</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Zapatos.PNG" alt="Zapatos">
+                    <h4 class="card_titulo">Zapatos</h4>
+                    <p class="card_desc">Talle 37</p>
+                    <p class="card_price">$4500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Bikini.PNG" alt="Bikini">
+                    <h4 class="card_titulo">Bikini</h4>
+                    <p class="card_desc">Talle 1</p>
+                    <p class="card_price">$4500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Blazer Akiabara.PNG" alt="BlazerAkiabara">
+                    <h4 class="card_titulo">Blazer Akiabara</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$6000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Blazer blanco.PNG" alt="BlazerBlanco">
+                    <h4 class="card_titulo">Blazer</h4>
+                    <p class="card_desc">Talle M</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Blazer Forever 21.PNG" alt="BlazerForever21">
+                    <h4 class="card_titulo">Blazer Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$5500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Forever 21 2.PNG" alt="CamisaForever21-2">
+                    <h4 class="card_titulo">Camisa Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Forever 21.PNG" alt="CamisaForever21-1">
+                    <h4 class="card_titulo">Camisa Forever 21</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Kosiuko.PNG" alt="CamisaKosiuko">
+                    <h4 class="card_titulo">Camisa Kosiuko</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$5000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa.PNG" alt="Camisa">
+                    <h4 class="card_titulo">Camisa</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$2500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Chaleco jean.PNG" alt="ChalecoJean">
+                    <h4 class="card_titulo">Chaleco Jean</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Collar Forever 1.PNG" alt="Collar1">
+                    <h4 class="card_titulo">Collar Forever 21</h4>
+                    <p class="card_desc">Talle único</p>
+                    <p class="card_price">$1200</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Collar Forever 2.PNG" alt="Collar2">
+                    <h4 class="card_titulo">Collar Forever 21</h4>
+                    <p class="card_desc">Talle único</p>
+                    <p class="card_price">$1200</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Musculosa charreteras.PNG" alt="MusculosaCharreteras">
+                    <h4 class="card_titulo">Musculosa</h4>
+                    <p class="card_desc">Talle S</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Musculosa Forever21.PNG" alt="MusculosaForever21">
+                    <h4 class="card_titulo">Musculosa Forever 21</h4>
+                    <p class="card_desc">Talle L</p>
+                    <p class="card_price">$3800</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col">
+                <h2 class="clase_tienda">Niños</h2>
+            </div>
+        </div>
+
+        <section class="prendas">
+
+            <div class="row">
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Baby Cottons.PNG" alt="CamisaBabyCottons">
+                    <h4 class="card_titulo">Camisa Baby Cottons</h4>
+                    <p class="card_desc">Talle 2 años</p>
+                    <p class="card_price">$5000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Baby Harvest.PNG" alt="CamisaBabyHarvest">
+                    <h4 class="card_titulo">Camisa Baby Harvest</h4>
+                    <p class="card_desc">Talle 9 meses</p>
+                    <p class="card_price">$3000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Carters.PNG" alt="CamisaCarters">
+                    <h4 class="card_titulo">Camisa Carters</h4>
+                    <p class="card_desc">Talle 12 meses</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Camisa Zara kids.PNG" alt="CamisaZaraKids">
+                    <h4 class="card_titulo">Camisa Zara</h4>
+                    <p class="card_desc">Talle 12 meses</p>
+                    <p class="card_price">$4500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img//Chaleco H&M kids.PNG" alt="ChalecoHyMKids">
+                    <h4 class="card_titulo">Chaleco H&M</h4>
+                    <p class="card_desc">Talle 12 meses</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Conjunto baby cottons.PNG" alt="ConjuntoBabyCottons">
+                    <h4 class="card_titulo">Conjunto Baby Cottons</h4>
+                    <p class="card_desc">Talle RN</p>
+                    <p class="card_price">$3700</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Conjunto bebe.PNG" alt="ConjuntoBebe">
+                    <h4 class="card_titulo">Conjunto bebe</h4>
+                    <p class="card_desc">Talle 3 meses</p>
+                    <p class="card_price">$4000</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Pack bodies.PNG" alt="PackBodies">
+                    <h4 class="card_titulo">Pack Bodies Baby Harvest</h4>
+                    <p class="card_desc">Talle RN</p>
+                    <p class="card_price">$3200</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Pantalon H&M kids.PNG" alt="PantalonHyMKids">
+                    <h4 class="card_titulo">Pantalón H&M</h4>
+                    <p class="card_desc">Talle 12 meses</p>
+                    <p class="card_price">$3600</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 card">
+                    <img class="card_imagen" src="../img/Short verde.PNG" alt="ShortVerde">
+                    <h4 class="card_titulo">Short</h4>
+                    <p class="card_desc">Talle 10</p>
+                    <p class="card_price">$1500</p>
+                    <button class="btn btn-outline-dark">Agregar al carrito</button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="row">
+
+            <div class="col">
+                <img src="../img/Imagen4.png" alt="logo" class="logo_footer">
+            </div>
+
+            <div class="col">
+                <p>Sitio web de prueba desarrollado en el curso de Desarrollo Web de Coderhouse</p>
+            </div>
+
+            <div class="col logos_prestadores">
+                <img src="../img/Correo_arg_logo.png" alt="correo" class="img_footer">
+                <img src="../img/logo mercado pago1.webp" alt="mercado_pago" class="img_footer">
+            </div>
+
+
+        </footer>
+
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
 
 </body>
 
