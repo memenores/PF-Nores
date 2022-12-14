@@ -3,7 +3,12 @@
 .prendas{
     display: flex;
     align-content: center;
-    justify-content: space-between;
+
+}
+
+.fila{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card{
@@ -17,9 +22,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
+    
 }
+
 .card_imagen{
     height: $imagen-g;
 }

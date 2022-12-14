@@ -3,7 +3,7 @@
 /*variables de tamaño de imagen*/
 /*mixin*/
 /*Formato general del sitio web*/
-@import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');*/
 body {
   background-image: url("../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg");
   background-repeat: no-repeat;
@@ -138,11 +138,12 @@ footer p {
   justify-content: end;
 }
 
-.leyenda {
-  display: flex;
-  padding: 1rem;
+@media screen and (max-width: 767px) {
+  .logos_prestadores {
+    display: flex;
+    justify-content: left;
+  }
 }
-
 /*Formato pagina Inicio*/
 .carousel {
   margin-top: 1rem;
@@ -152,7 +153,11 @@ footer p {
 .prendas {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {

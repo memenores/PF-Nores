@@ -1,5 +1,7 @@
 /*Formato general del sitio web*/
-@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');*/
 
 body{
     background-image: url("../img/abstract-background-of-shadows-palm-leaves-on-white-wall.jpg");
@@ -157,9 +159,13 @@ footer p{
     
 }
 
-.leyenda{
-    display: flex;
-    padding: 1rem;
+@media screen and (max-width: 767px){
+    .logos_prestadores{
+        display: flex;
+        justify-content: left;
+    }
+
+    
 }
 
 
